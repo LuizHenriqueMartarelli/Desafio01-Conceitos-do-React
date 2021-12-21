@@ -15,7 +15,7 @@ export function TaskList() {
   function handleCreateNewTask() {
     let id = Math.floor(Math.random() * 1000);
 
-    if (newTaskTitle !== "") {
+    if (newTaskTitle.slice() !== "") {
       if (
         !tasks.some((t) => t.title.toLowerCase() === newTaskTitle.toLowerCase())
       ) {
